@@ -1,2 +1,4 @@
 *.class
 check_numbers
+*.cmo
+*.cmi
