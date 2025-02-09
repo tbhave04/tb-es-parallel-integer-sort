@@ -3,7 +3,7 @@ package input;
 import java.util.Random;
 
 class NumberGenerator {
-    static int N = 100;
+    static int N = 100_000;
     public static void main (String[] args) {
         if (args.length > 2) {
             N = Integer.parseInt(args[2]);
