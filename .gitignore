@@ -1,4 +1,5 @@
 *.class
 check_numbers
+sort_numbers
 *.cmo
 *.cmi

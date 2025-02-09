@@ -1,4 +1,4 @@
-all: check/check_numbers input/NumberGenerator.class sort/sort_numbers
+serial: check/check_numbers input/NumberGenerator.class sort/sort_numbers
 	java input.NumberGenerator | ./sort/sort_numbers | ./check/check_numbers
 
 check/check_numbers: check/check_numbers.cpp
