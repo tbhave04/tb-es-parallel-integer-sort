@@ -3,3 +3,4 @@ check_numbers
 sort_numbers
 *.cmo
 *.cmi
+.vscode/
