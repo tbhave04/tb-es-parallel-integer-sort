@@ -7,7 +7,7 @@ import time
 
 def main():
     DEFAULT_NUM_INTS = 100_000
-    DEFAULT_PROGRAM = "sort/sort_numbers"
+    DEFAULT_PROGRAM = "java Serial.java"
 
     if len(sys.argv) > 1:
         try:
@@ -32,7 +32,7 @@ def main():
     start_time = time.time()
 
     process = subprocess.Popen(
-        [program],
+        ["java", "Serial"],
         stdin=subprocess.PIPE,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,

@@ -1,7 +1,7 @@
 n ?= 100000
-path ?= sort/sort_numbers
+path ?= "java Serial.java"
 # usage: make n=[whatever] path=[path to ur sorting executable]
-serial: sort/sort_numbers
+serial: Serial.java
 	python3 check.py $(n) $(path)
 
 sort/sort_numbers: sort/sort_numbers.ml
