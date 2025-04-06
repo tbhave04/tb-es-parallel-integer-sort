@@ -6,8 +6,8 @@ import subprocess
 import time
 
 def main():
-    DEFAULT_NUM_INTS = 100_000
-    DEFAULT_PROGRAM = "java Serial.java"
+    DEFAULT_NUM_INTS = 10000000
+    DEFAULT_PROGRAM = "java Parallel.java"
 
     if len(sys.argv) > 1:
         try:
@@ -32,7 +32,7 @@ def main():
     start_time = time.time()
 
     process = subprocess.Popen(
-        ["java", "Serial"],
+        ["java", "Parallel"],
         stdin=subprocess.PIPE,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
